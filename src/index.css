@@ -1,0 +1,102 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 17% 13%;
+    --foreground: 0 0% 98%;
+    
+    --card: 222 20% 9%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 222 20% 9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 142 92% 50%;
+    --primary-foreground: 220 17% 10%;
+    
+    --secondary: 215 19% 18%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 217 19% 16%;
+    --muted-foreground: 215 16% 75%;
+    
+    --accent: 217 19% 16%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 217 19% 18%;
+    --input: 217 19% 18%;
+    --ring: 199 89% 48%;
+    
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Custom scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--secondary);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/70;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-lg border border-primary/10 shadow-sm;
+  }
+  
+  .highlight-card {
+    @apply bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-lg border border-primary/10 shadow-md;
+  }
+  
+  .dashboard-card {
+    @apply rounded-2xl p-6 transition-all duration-300 hover:shadow-[0_0_15px_rgba(50,205,50,0.1)];
+  }
+  
+  .page-transition {
+    @apply animate-fade-in-up;
+  }
+  
+  .button-hover {
+    @apply transition-all duration-300 hover:shadow-[0_0_15px_rgba(50,205,50,0.2)] hover:scale-[1.02];
+  }
+  
+  .input-focus {
+    @apply focus:ring-2 focus:ring-primary/30 focus:border-primary/30 transition-all duration-300;
+  }
+  
+  .tech-gradient {
+    @apply bg-gradient-to-r from-primary/80 to-blue-400/80 bg-clip-text text-transparent;
+  }
+  
+  .cyber-border {
+    @apply border border-primary/30 shadow-[0_0_8px_rgba(50,205,50,0.3)];
+  }
+}
