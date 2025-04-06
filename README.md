@@ -1,58 +1,60 @@
-# FinWhisper Sentiment Tracker
+FinGenie: AI-Powered Financial Assistant
+Overview
+FinGenie is an AI-driven financial assistant designed to empower retail investors in India. It offers real-time risk analysis, scam detection, and personalized financial guidance to help users make smarter, safer investment decisions.
 
-A modern web application for tracking financial market sentiment and analysis.
+Problem Statement
+Financial illiteracy is widespread, especially in Tier-2 and Tier-3 cities.
 
-## Getting Started
+Existing fintech platforms focus on transactions, not education.
 
-### Local Development
+Investors face risks from misinformation and fraud.
 
-1. Clone this repository
-2. Install dependencies:
-```bash
-npm install
-```
-3. Run the development server:
-```bash
-npm run dev
-```
+Solution
+FinGenie provides:
 
-## Features
+AI-powered risk assessment for stocks and mutual funds.
 
-- Real-time sentiment analysis
-- Market trend visualization
-- Interactive dashboard
-- Responsive design
-- Modern UI/UX
+Scam detection with real-time alerts.
 
-## Tech Stack
+Personalized financial guidance based on risk profile.
 
-- React + TypeScript
-- Tailwind CSS
-- Vite
-- Shadcn/ui
+Multilingual financial education, accessible to a wide audience.
 
-## Building for Production
+Features
+AI Chatbot Mentor: Answers investment queries in multiple languages.
 
-To create a production build:
+Real-Time Risk Assessment: Evaluates stocks, mutual funds, and portfolios.
 
-```bash
-npm run build
-```
+Scam Detection: Alerts users to Ponzi schemes and pump-and-dump scams.
 
-To preview the production build:
+Personalized Guidance: Tailored recommendations based on the user’s financial goals and risk tolerance.
 
-```bash
-npm run preview
-```
+Tech Stack
+Frontend: React (Web), Flutter (Mobile)
 
-## Deployment
+Backend: FastAPI, Node.js
 
-You can deploy this application to any static hosting service like Vercel, Netlify, or GitHub Pages.
+AI/NLP: Google Gemini API
 
-## Contributing
+Cloud: Google Cloud, Firebase
 
-Feel free to submit issues and pull requests.
+Security: AES-256 encryption
 
-## License
+How It Works
+Risk Assessment: Analyzes assets for risk and provides reports.
 
-MIT License
+Scam Detection: Scans market trends and alerts users about fraudulent schemes.
+
+Personalized Guidance: AI generates tailored investment strategies.
+
+Learning Hub: Offers interactive courses and quizzes.
+
+Monetization
+Freemium Model: Basic features are free; premium reports are paid.
+
+Fintech Partnerships: Integrations with platforms like Groww and Zerodha.
+
+Educational Courses: AI-powered financial literacy courses.
+
+Conclusion
+FinGenie helps retail investors make informed, secure investments by providing personalized advice, real-time risk analysis, and scam detection. With a focus on financial literacy and safety, it’s an essential tool for India’s growing base of retail investors.
